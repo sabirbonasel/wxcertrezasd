@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google Font: Viga -->
+  <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e9ecf1;
+      font-family: Arial, sans-serif;
+    }
+    .email-wrapper {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header-row {
+      background-color: #696969;
+      display: flex;
+      justify-content: center;       /* center the logo */
+      align-items: center;
+      padding: 15px 25px;
+    }
+    .header-row .logo img {
+      max-height: 70px;              /* smaller logo */
+      width: auto;
+    }
+
+    /* Content area */
+    .content {
+      padding: 10px 25px;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+      background-color: #696969;
+      color: #ffffff;
+    }
+    /* Viga font for the main heading */
+    .content h1 {
+      font-family: 'Viga', sans-serif;
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    /* Product image wrapper with glowing background */
+    .product-image {
+      position: relative;
+      display: inline-block;
+      padding: 20px; /* breathing room around glow */
+    }
+    .product-image::before {
+      content: "";
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 350px;   /* size of the glow */
+      height: 350px;
+      background: radial-gradient(
+        circle at center,
+        rgba(255,255,255,0.8) 0%,
+        rgba(255,255,255,0.4) 10%,
+        rgba(255,255,255,0) 70%
+      );
+      z-index: 0;
+    }
+    .product-image img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      max-width: 250px;
+      border-radius: 4px;
+    }
+
+    /* CTA Button */
+    .cta-button {
+      display: inline-block;
+      background-color: #000;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 14px 100px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    /* Unsubscribe – centered */
+    .unsubscribe {
+      text-align: center;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 10px !important;
+      line-height: 18px;
+      color: #666;
+      padding: 20px;
+    }
+    .unsubscribe a {
+      color: #666;
+      font-size: 10px !important;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      .header-row {
+        padding: 15px;
+      }
+      .content h1 {
+        font-size: 22px;
+      }
+      .cta-button {
+        padding: 12px 60px;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+
+    <!-- Header -->
+    <div class="header-row">
+      <div class="logo">
+        <a href="https://t.co/YZkZiRt1t1" target="_blank"></a>
+        <a href="https://t.co/YZkZiRt1t1" target="_blank"></a>
+      </div>
+    </div>
+
+    <!-- Body Content -->
+    <div class="content">
+      <h1>Claim Your HP Laptop Today!</h1>
+
+      <div class="product-image">
+        <a href="https://t.co/YZkZiRt1t1" target="_blank"><img src="https://i.imgur.com/7LfRrVZ.png"/></a>
+        <a href="https://t.co/YZkZiRt1t1" target="_blank"><img src="//i.imgur.com/7LfRrVZ.png"/></a>
+      </div>
+
+      <p>You've been chosen to receive a free HP Laptop.<br>
+         Just complete our short survey to claim yours.</p>
+      <p><strong>Rewards are limited – don't miss out!</strong></p>
+      <a href="https://t.co/YZkZiRt1t1" class="cta-button">Take the Survey</a><br><br>
+    </div>
+
+    <!-- Unsubscribe (centered) -->
+    <div class="unsubscribe">
+      If you no longer wish to receive these emails, you may unsubscribe by <a href="https://t.co/6igHMUdyZa">clicking here.</a>
+    </div>
+
+  </div>
+</body>
+</html>
